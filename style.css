@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  background-color: white;
+}

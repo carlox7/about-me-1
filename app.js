@@ -21,7 +21,7 @@ if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
 var quizResponseTwo = prompt('Has Kevin been to Spain?').toUpperCase();
 
 if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
-  console.log('Correct, but Kevin would love to go someday!');
+  console.log('Correct, Kevin has been to many European countries but not Spain. He would love to go someday!');
 } else if(quizResponseTwo === 'N' || quizResponseTwo === 'NO'){
   console.log('Your right! Kevin has gone to many other European countries but never Spain... yet');
 } else {
