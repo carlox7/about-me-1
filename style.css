@@ -1,9 +1,9 @@
 body {
-  background-color: silver;
+  background-color: grey;
 }
 
 h1 {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Shade', bold;
   font-size: 80px;
   text-align: center;
   color: black;
@@ -14,4 +14,5 @@ h2 {
   font-family: 'Rubik', sans-serif;
   color: black;
   background-color: white;
+  width: auto;
 }

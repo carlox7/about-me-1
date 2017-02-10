@@ -75,16 +75,25 @@
 //   }
 // }
 
-var correctState = ['WASHINGTON || OREGON || IDAHO || MONTANA || NEW YORK || NEW JERSEY || TEXAS || NEVADA || MONTANA, CALIFORNIA, PENNSYLVANIA, NORTH CAROLINA'];
+var correctState = ['WASHINGTON, OREGON, IDAHO, MONTANA, NEW YORK, NEW JERSEY, TEXAS, NEVADA, MONTANA, CALIFORNIA, PENNSYLVANIA, NORTH CAROLINA'];
 
-console.log(correctState);
+// console.log(correctState);
+
+stateAnswers = array_count_values(correctState)
+
+
 
 for (var i = 0; i < 4; i++){
   var quizResponseSeven = (prompt('What US states has Kevin been to?').toUpperCase);
-  if (quizResponseSeven === correctState){
-  } else if (quizResponseSix < correctAnswer){
+  if (quizResponseSeven === array_count_values(stateAnswers)){
+    prompt('Thats 1, try to pick another')
+  } else if (quizResponseSeven < correctState){
     alert('Too low! Guess again.');
-  } else if (quizResponseSix > correctAnswer){
+  } else if (quizResponseSeven > correctState){
     alert('Too high!');
   }
 }
+
+$array = array("Kyle","Ben","Sue","Phil","Ben","Mary","Sue","Ben");
+Counts = array_count_values($array);
+echo $counts['Ben'];
