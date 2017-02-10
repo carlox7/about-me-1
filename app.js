@@ -59,16 +59,18 @@
 //   console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
 // }
 
-var numResponse = prompt('Guess what number I am thinking of right now. 1 through 20');
+var correctAnswer = 14;
 
-var answer = [];
-
-for(var i = 0;i < 4; i++) {
-  if(quizResponseFive === 'Y' || quizResponseFive === 'YES'){
-    console.log('Your confidence is appreciated, but Kevin would hurt himself. He is getting old.');
-  } else if(quizResponseFive === 'N' || quizResponseFive === 'NO'){
-    console.log('What? He can do a jump kick like a friggin ninja!');
-  } else {
-    console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
+for (var i = 0; i < 4; i++){
+  var quizResponseSix = Number(prompt('Bonus Round! Guess a number between 1 and 20'));
+  console.log(typeof quizResponseSix);
+  console.log('going through 4 loop');
+  if (quizResponseSix === correctAnswer){
+    console.log('You guessed correct!');
+    break;
+  } else if (quizResponseSix < correctAnswer){
+    console.log('Too low! Guess again.');
+  } else if (quizResponseSix > correctAnswer){
+    console.log('Too high!');
   }
 }
