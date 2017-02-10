@@ -59,18 +59,32 @@
 //   console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
 // }
 
-var correctAnswer = 14;
+// var correctNumber = 14;
+//
+// for (var i = 0; i < 4; i++){
+//   var quizResponseSix = Number(prompt('Bonus Round! Guess a number between 1 and 20'));
+//   // console.log(typeof quizResponseSix);
+//   // console.log('going through 4 loop');
+//   if (quizResponseSix === correctAnswer){
+//     alert('You guessed correct!');
+//     break;
+//   } else if (quizResponseSix < correctAnswer){
+//     alert('Too low! Guess again.');
+//   } else if (quizResponseSix > correctAnswer){
+//     alert('Too high!');
+//   }
+// }
+
+var correctState = ['WASHINGTON || OREGON || IDAHO || MONTANA || NEW YORK || NEW JERSEY || TEXAS || NEVADA || MONTANA, CALIFORNIA, PENNSYLVANIA, NORTH CAROLINA'];
+
+console.log(correctState);
 
 for (var i = 0; i < 4; i++){
-  var quizResponseSix = Number(prompt('Bonus Round! Guess a number between 1 and 20'));
-  console.log(typeof quizResponseSix);
-  console.log('going through 4 loop');
-  if (quizResponseSix === correctAnswer){
-    console.log('You guessed correct!');
-    break;
+  var quizResponseSeven = (prompt('What US states has Kevin been to?').toUpperCase);
+  if (quizResponseSeven === correctState){
   } else if (quizResponseSix < correctAnswer){
-    console.log('Too low! Guess again.');
+    alert('Too low! Guess again.');
   } else if (quizResponseSix > correctAnswer){
-    console.log('Too high!');
+    alert('Too high!');
   }
 }
