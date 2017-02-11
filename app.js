@@ -1,27 +1,25 @@
-'use strict';
-
-// Quiz Confirmation
-var confirmQuiz = prompt('Hello, would you like to take a quiz? Answer using Y or N').toUpperCase();
-
-if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
-  console.log('Awesome! Letsssa Goooooo!');
-} else {
-  console.log('Your taking it anyway.  Email StopCryingandTaketheQuiz@aol.com with complaints. Thx');
-}
-
-var QuestionAnswers = (quizResponseOne === 'Y' || quizResponseOne === 'YES');
-
-// Question One
-var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
-
-if(quizResponseOne === QuestionAnswers{
-  console.log('Awesome! You are correct!');
-} else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
-  console.log('No!. Kevin has a dog. Cats are the devil!');
-} else {
-  console.log('Please answer using Y or N or Yes/No. PAY ATTENTION');
-}
-
+// 'use strict';
+//
+// // Quiz Confirmation
+// var confirmQuiz = prompt('Hello, would you like to take a quiz? Answer using Y or N').toUpperCase();
+//
+// if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
+//   console.log('Awesome! Letsssa Goooooo!');
+// } else {
+//   console.log('Your taking it anyway.  Email StopCryingandTaketheQuiz@aol.com with complaints. Thx');
+// }
+//
+// // Question One
+// var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
+//
+// if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
+//   console.log('Awesome! You are correct!');
+// } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
+//   console.log('No!. Kevin has a dog. Cats are the devil!');
+// } else {
+//   console.log('Please answer using Y or N or Yes/No. PAY ATTENTION');
+// }
+//
 // // Question Two
 // var quizResponseTwo = prompt('Has Kevin been to Spain?').toUpperCase();
 //
@@ -64,25 +62,42 @@ if(quizResponseOne === QuestionAnswers{
 // } else {
 //   console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
 // }
-//
-// // Question Six Random Number
-// var correctNumber = 14;
-//
-// for (var quizOne = 0; quizOne < 4; quizOne++){
-//   var quizResponseSix = Number(prompt('Bonus Round! Guess a number between 1 and 10'));
-//   // console.log(typeof quizResponseSix);
-//   // console.log('going through 4 loop');
-//   if (quizResponseSix === correctAnswer){
-//     alert('You guessed correct!');
-//     break;
-//   } else if (quizResponseSix < correctAnswer){
-//     alert('Too low! Guess again.');
-//   } else if (quizResponseSix > correctAnswer){
-//     alert('Too high!');
-//   }
-// }
 
-// var correctState = ['WASHINGTON, OREGON, IDAHO, MONTANA, NEW YORK, NEW JERSEY, TEXAS, NEVADA, MONTANA, CALIFORNIA, PENNSYLVANIA, NORTH CAROLINA'];
+// Question Six Random Number
+var correctAnswer = 6;
+
+for (var i = 0; i < 4; i++){
+  var quizResponseSix = prompt('Bonus Round! Guess a number between 1 and 10');
+  var numberGuess = parseInt(quizResponseSix);
+  if (numberGuess === correctAnswer){
+    alert('You guessed correct!');
+    break;
+  } else if (numberGuess < correctAnswer){
+    alert('Too low! Guess again.');
+  } else if (numberGuess > correctAnswer){
+    alert('Too high!');
+  }
+}
+
+var statesVisited = ['WASHINGTON', 'OREGON'];
+//number of guesses
+for(var i = 0; i < 6; i++){
+  var quizResponseSeven = prompt('Which states has Kevin visited?').toUpperCase();
+  for(var ii = 0; ii < statesVisited.length; ii++){
+    if(quizResponseSeven === statesVisited[ii]);
+    alert('Good Job! ' + ii + ' is a state Kevin has visited');
+    i = 30;
+    rightAnswer++;
+    break;
+  }
+}
+if(i === 5){
+  alert('Your all out of guesses. The correct answers are ' + statesVisited);
+}
+
+
+
+
 //
 // // console.log(correctState);
 //
