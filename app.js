@@ -94,10 +94,6 @@ for(var i = 0; i < 6; i++){
 if(i === 5){
   alert('Your all out of guesses. The correct answers are ' + statesVisited);
 }
-
-
-
-
 //
 // // console.log(correctState);
 //
