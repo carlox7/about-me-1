@@ -8,21 +8,21 @@ if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
 } else {
   console.log('Your taking it anyway.  Email StopCryingandTaketheQuiz@aol.com with complaints. Thx');
 }
-
-document.write('confirmQuiz');
-
+function catQuestion(){
 // Question One
-var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
+  var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
 
-if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
-  console.log('Awesome! You are correct!');
-} else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
-  console.log('No!. Kevin has a dog. Cats are the devil!');
-} else {
-  console.log('Please answer using Y or N or Yes/No. PAY ATTENTION');
+  if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
+    console.log('No!. Kevin has a dog. Cats are the devil!');
+  } else {
+    console.log('Please answer using Y or N or Yes/No. PAY ATTENTION');
+  }
 }
+catQuestion();
 
-// Question Two
+//Question Two
 var quizResponseTwo = prompt('Has Kevin been to Spain?').toUpperCase();
 
 if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
@@ -123,7 +123,7 @@ for (var quizOne = 0; quizOne < 4; quizOne++){
 // // for(var i = 0; i< arr.length; i++) {
 // //     var num = arr[i];
 // //     counts[num] = counts[num] ? counts[num]+1 : 1;
-break
+/*break
 
 sumOfnumbers(3,7);
 
@@ -137,4 +137,4 @@ var addTwoThings = function(numOne, numTwo){
 
 function sumOfnumbers(numOne, numTwo){
   console.log(numOne + numTwo);
-}
+}*/
