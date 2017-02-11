@@ -22,6 +22,7 @@ function catQuestion(){
 }
 catQuestion();
 
+function spainQuestion(){
 //Question Two
 var quizResponseTwo = prompt('Has Kevin been to Spain?').toUpperCase();
 
@@ -32,7 +33,10 @@ if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. Didn\'t we go over this?');
 }
+}
+spainQuestion();
 
+function mphQuestion(){
 // Question Three
 var quizResponseThree = prompt('Has Kevin ever gone 180mph?').toUpperCase();
 
@@ -42,7 +46,10 @@ if(quizResponseThree === 'Y' || quizResponseThree === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. I feel like I\'m repeating myself.');
 }
+}
+mphQuestion();
 
+function beerQuestion(){
 // Question Four
 var quizResponseFour = prompt('Is lager Kevin\'s favorite kind of beer?').toUpperCase();
 
@@ -53,7 +60,10 @@ if(quizResponseFour === 'Y' || quizResponseFour === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. Not trying to insult your intelligence but....');
 }
+}
+beerQuestion();
 
+function kickQuestion(){
 // Question Five
 var quizResponseFive = prompt('Can Kevin do a jump kick?').toUpperCase();
 
@@ -64,7 +74,8 @@ if(quizResponseFive === 'Y' || quizResponseFive === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
 }
-
+}
+kickQuestion();
 // Question Six Random Number
 var correctNumber = 14;
 
