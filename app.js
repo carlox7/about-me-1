@@ -22,7 +22,7 @@ function QuestionOne(){
 }
 QuestionOne();
 
-function spainQuestion(){
+function QuestionTwo(){
 //Question Two
   var quizResponseTwo = prompt('Has Kevin been to Spain?').toUpperCase();
 
@@ -34,7 +34,7 @@ function spainQuestion(){
     console.log('Please answer using Y/N or Yes/No. Didn\'t we go over this?');
   }
 }
-spainQuestion();
+QuestionTwo();
 
 function mphQuestion(){
 // Question Three
