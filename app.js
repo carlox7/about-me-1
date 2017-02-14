@@ -96,7 +96,7 @@ function numGame(){
 }
 numGame();
 
-function statesQuestion(){
+function QuestionFive(){
 //Question Seven States Question
   var statesVisited = ['WASHINGTON', 'OREGON'];
 //number of guesses
@@ -113,7 +113,7 @@ function statesQuestion(){
     alert('Your all out of guesses. The correct answers are ' + statesVisited);
   }
 }
-statesQuestion();
+QuestionFive();
 // var correctState = ['WASHINGTON, OREGON, IDAHO, MONTANA, NEW YORK, NEW JERSEY, TEXAS, NEVADA, MONTANA, CALIFORNIA, PENNSYLVANIA, NORTH CAROLINA'];
 //
 // // console.log(correctState);
