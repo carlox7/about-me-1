@@ -61,7 +61,7 @@ function beerQuestion(){
     console.log('Please answer using Y/N or Yes/No. Not trying to insult your intelligence but....');
   }
 }
-beerQuestion();
+QuestionFour();
 
 function kickQuestion(){
 // Question Five
@@ -75,7 +75,7 @@ function kickQuestion(){
     console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
   }
 }
-kickQuestion();
+QuestionFour();
 
 function numGame(){
 // Question Six Random Number
