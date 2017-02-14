@@ -8,7 +8,7 @@ if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
 } else {
   console.log('Your taking it anyway.  Email StopCryingandTaketheQuiz@aol.com with complaints. Thx');
 }
-function catQuestion(){
+function QuestionOne(){
 // Question One
   var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
 
@@ -20,7 +20,7 @@ function catQuestion(){
     console.log('Please answer using Y or N or Yes/No. PAY ATTENTION');
   }
 }
-catQuestion();
+QuestionOne();
 
 function spainQuestion(){
 //Question Two
