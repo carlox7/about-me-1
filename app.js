@@ -36,7 +36,7 @@ function QuestionTwo(){
 }
 QuestionTwo();
 
-function mphQuestion(){
+function QuestionThree(){
 // Question Three
   var quizResponseThree = prompt('Has Kevin ever gone 180mph?').toUpperCase();
 
@@ -47,7 +47,7 @@ function mphQuestion(){
     console.log('Please answer using Y/N or Yes/No. I feel like I\'m repeating myself.');
   }
 }
-mphQuestion();
+QuestionThree();
 
 function beerQuestion(){
 // Question Four
